@@ -1,2 +1,2 @@
 joblib
-
+streamlit_option_menu
