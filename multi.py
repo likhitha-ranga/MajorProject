@@ -6,6 +6,8 @@ import pandas as pd
 import joblib
 from datetime import datetime
 from streamlit_option_menu import option_menu
+# Register function
+import re 
 
 # Load models
 diabetes_model = joblib.load('catboost_diabetes_pipeline.pkl')
@@ -194,8 +196,6 @@ def home_page():
     st.markdown('</div>', unsafe_allow_html=True)  # Close card
     st.markdown('</div>', unsafe_allow_html=True)  # Close container
 
-# Register function
-import re 
 
 def register():
     set_bg_from_url("https://images.everydayhealth.com/homepage/health-topics-2.jpg?w=768", opacity=0.875)
